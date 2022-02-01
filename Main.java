@@ -1,7 +1,7 @@
 import java.util.concurrent.TimeUnit;
 class Main {
   public static void main(String[] args) {
-    boolean trolling = true;
+    boolean trolling = true;//do not set to false it will cause the universe to collapse
     int numOfTimes = 0;
     int[] nums;
     nums = new int[11];
@@ -24,8 +24,7 @@ class Main {
             }
             System.out.println("");
           }
-          try
-{
+          try{
     Thread.sleep(300);
 }
 catch(InterruptedException ex)
@@ -37,6 +36,14 @@ catch(InterruptedException ex)
        System.out.println("Number of tries " + numOfTimes);
        if(numOfTimes == 69){
          System.out.println("nice bruv три полоски");
+           }
+           if(numOfTimes >= 100){
+           System.out.println("блин, на что ушло много попыток, дебил");
+           //english is "pancake that was a lot of tries debil"
+           //slav english is "blin that was a lot of tries debil"
+           if(trolling != true){
+             System.out.println("the universe is collapsing why would you set it to false!!!");
+         }
        }
     }
   }
