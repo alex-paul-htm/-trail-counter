@@ -26,7 +26,7 @@ class Main {
           }
           try
 {
-    Thread.sleep(500);
+    Thread.sleep(300);
 }
 catch(InterruptedException ex)
 {
@@ -35,5 +35,8 @@ catch(InterruptedException ex)
         }
       }
        System.out.println("Number of tries " + numOfTimes);
+       if(numOfTimes == 69){
+         System.out.println("nice bruv три полоски");
+       }
     }
   }
