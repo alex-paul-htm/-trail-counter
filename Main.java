@@ -1,0 +1,39 @@
+import java.util.concurrent.TimeUnit;
+class Main {
+  public static void main(String[] args) {
+    boolean trolling = true;
+    int numOfTimes = 0;
+    int[] nums;
+    nums = new int[11];
+    nums[0] = 0;
+    for(int j = 1; j < 11; j++){
+      nums[j] = (int)(Math.random() * 10) + 1;
+    }
+
+    for (int i = 1; i < 11; i++) {
+      int done = 1;
+      while (done == 1){
+        if (nums[i] == nums[i-1]+1){
+          done = 0;
+        }
+          else if (nums[i] != nums[i-1]+1){
+            nums[i] = (int)(Math.random() * 10) + 1;
+            numOfTimes++;
+            for (int kekw = 1; kekw < 11; kekw++){
+            System.out.print(nums[kekw] + ", ");
+            }
+            System.out.println("");
+          }
+          try
+{
+    Thread.sleep(500);
+}
+catch(InterruptedException ex)
+{
+    Thread.currentThread().interrupt();
+}
+        }
+      }
+       System.out.println("Number of tries " + numOfTimes);
+    }
+  }
